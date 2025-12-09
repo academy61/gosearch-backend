@@ -15,7 +15,7 @@ app.config['SECRET_KEY'] = os.getenv("FLASK_SECRET_KEY", "your_fallback_secret_k
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 if not GEMINI_API_KEY:
-    raise ValueError("GEMINI_API_KEY environment variable not set. Please set it to your Gemini API key.")
+    raise ValueError("AIzaSyDNZostm9Lt0iRIl2odPxBLW39Rg-QapIw")
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-pro') 
