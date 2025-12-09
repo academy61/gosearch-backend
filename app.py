@@ -9,7 +9,7 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True) # Enable CORS for frontend interaction and credentials
-app.config['SECRET_KEY'] = os.getenv("FLASK_SECRET_KEY", "your_fallback_secret_key") # Important for sessions
+app.config['SECRET_KEY'] = os.getenv("FLASK_SECRET_KEY", "0497af52cd3b20884d4dff764a98649a2fda7fb314790cbaf0067f184f1da121") # Important for sessions
 
 # --- Gemini API Configuration ---
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
