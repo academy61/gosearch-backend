@@ -18,7 +18,7 @@ if not GEMINI_API_KEY:
     raise ValueError("AIzaSyDNZostm9Lt0iRIl2odPxBLW39Rg-QapIw")
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-pro') 
+model = genai.GenerativeModel('gemini-2.5-flash') 
 
 # --- Flask-Login Configuration ---
 login_manager = LoginManager()
